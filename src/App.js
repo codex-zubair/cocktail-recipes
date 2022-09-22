@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import Card from './Components/Card/Card';
+import Modal from './Components/Modal/Modal';
 
 
 function App() {
@@ -8,10 +9,14 @@ function App() {
     <div className="App">
       <h1 className='text-2xl font-semibold'>Cocktail Recipes</h1>
 
+      <Modal></Modal>
+
       {/* All Cocktail List */}
       <section className='grid grid-cols-1'>
       <ShowAllCocktails></ShowAllCocktails>
       </section>
+
+      
       
     </div>
   );
