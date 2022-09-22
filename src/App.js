@@ -29,7 +29,6 @@ const ShowAllCocktails = ()=>
     .then(cocktailsList=> setCocktailsList(cocktailsList.drinks))
   },[])
   
-  
   return cockTailsList.map(cockTail=> <Card key = {cockTail.idDrink} cockTail = {cockTail}></Card>)
 
 }
