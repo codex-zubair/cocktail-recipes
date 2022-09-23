@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <h1 className='text-2xl font-semibold'>Cocktail Recipes</h1>
 
-      <Modal></Modal>
+
 
       {/* All Cocktail List */}
       <section className='grid grid-cols-1'>
