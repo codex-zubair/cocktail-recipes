@@ -8,7 +8,7 @@ const Card = (props) => {
 
 
     // Using state to showing modal
-    const [showModal, setShowModal] = useState(false); 
+    let [showModal, setShowModal] = useState(false); 
 
   
 
@@ -40,7 +40,7 @@ const Card = (props) => {
 
         
 
-                <Modal showModal = {showModal}></Modal>
+                <Modal showModal = {showModal} setShowModal={setShowModal}></Modal>
 
                 
             </div>
