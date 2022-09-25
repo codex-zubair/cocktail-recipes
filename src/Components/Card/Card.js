@@ -3,19 +3,20 @@ import Modal from '../Modal/Modal';
 
 
 const Card = (props) => {
-
-    const { strDrinkThumb, strDrink } = props.cockTail
-
-
+    const { strDrinkThumb, strDrink, idDrink} = props.cockTail
     // Using state to showing modal
     let [showModal, setShowModal] = useState(false); 
 
+    
+
+
+    
   
 
 
 
     return (
-   
+        
 
         <div showModal={showModal} className="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 mx-auto mt-2">
         
@@ -24,7 +25,7 @@ const Card = (props) => {
 
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{strDrink}</h5>
 
-
+                <p>{idDrink}</p>
                 <img className='rounded-t-lg' src={strDrinkThumb} alt="" />
 
 
@@ -40,7 +41,7 @@ const Card = (props) => {
 
         
 
-                <Modal showModal = {showModal} setShowModal={setShowModal}></Modal>
+                <Modal key={idDrink} id={idDrink} showModal = {showModal} setShowModal={setShowModal}></Modal>
 
                 
             </div>
